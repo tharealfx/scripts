@@ -7418,9 +7418,8 @@ function library:CreateWindow(options, ...)
 			Callback = function()
 				lasthidebing = os.clock()
 			end
-		}}, {"AddLabel", "__Designer.Label.Version", settingssection, {
-			Name = "Script Version:"
-		}}}
+		}},
+		}
 		if setclipboard and daaata[8] then
 			local common_table = daaata[8][4]
 			if common_table then
