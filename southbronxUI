@@ -7347,7 +7347,7 @@ function library:CreateWindow(options, ...)
 			Flag = "__Designer.Background.WorkspaceProfile",
 			Flags = true,
 			Suffix = "Config",
-			Workspace = library.WorkspaceName or "Unnamed Workspace",
+			Workspace = FX Scripts or "Unnamed Workspace",
 			Desginer = true
 		}
 		local daaata = {{"AddTextbox", "__Designer.Textbox.ImageAssetID", backgroundsection, {
@@ -7385,7 +7385,7 @@ function library:CreateWindow(options, ...)
 			Desginer = true
 		}}, {"AddTextbox", "__Designer.Textbox.WorkspaceName", filessection, {
 			Name = "Workspace Name",
-			Value = library.WorkspaceName or "Unnamed Workspace",
+			Value = FX Scripts or "Unnamed Workspace",
 			Flag = "__Designer.Files.WorkspaceFile",
 			Callback = function(n, o)
 				persistoptions.Workspace = n or o
